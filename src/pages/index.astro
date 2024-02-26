@@ -31,7 +31,8 @@ const projects = (await getCollection("work"))
 			<header class="hero">
 				<Hero
 					title="La atención y el apoyo que necesitas para alcanzar tus objetivos."
-					tagline="Sólo cuando seamos lo bastante valientes para explorar la oscuridad descubriremos el poder infinito de nuestra luz. ---Brene Brown"
+					tagline=`"Sólo cuando seamos lo bastante valientes para explorar la oscuridad descubriremos el poder infinito de nuestra luz."``
+					author="---Brene Brown"
 					align="start"
 				>
 					<div class="roles">
@@ -82,7 +83,7 @@ const projects = (await getCollection("work"))
 
 				<div class="cta">
 					<CallToAction href="/work/">
-						View All
+						Servicios
 						<Icon icon="arrow-right" size="1.2em" />
 					</CallToAction>
 				</div>
@@ -134,7 +135,7 @@ const projects = (await getCollection("work"))
 	}
 
 	.hero img {
-		aspect-ratio: 5 / 4;
+		aspect-ratio: auto;
 		object-fit: cover;
 		object-position: top;
 		border-radius: 1.5rem;
