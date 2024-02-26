@@ -1,22 +1,74 @@
 ---
-import Icon from './Icon.astro';
+import Icon from "./Icon.astro";
+import { Image } from "astro:assets";
 ---
 
 <section class="box skills">
 	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Full Stack</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+		<div class="services-image">
+			<Image
+				src="/assets/psico2.webp"
+				alt="descriptive text"
+				width="200"
+				height="150"
+				class="psico-img-1"
+			/>
+		</div>
+		<h2 class="help-heading">Podemos ayudarte</h2>
+
+		<div class="green-card">
+			<ul>
+				<li>
+					Hacer frente a las preocupaciones, el miedo, la tristeza y la
+					confusión.
+				</li>
+				<li>Cambiar para gestionar el estrés y la ansiedad cotidianos.</li>
+				<li>
+					Dar sentido a los sentimientos incómodos y las emociones abrumadoras.
+				</li>
+				<li>Construir y reforzar los vínculos familiares.</li>
+				<li>Convertirse en un cuidador más empático y atento.</li>
+				<li>Adaptarse a los grandes cambios y transiciones de la vida.</li>
+				<li>Evitar impulsos autodestructivos y adicciones.</li>
+				<li>Cultivar la autoestima y la confianza en uno mismo.</li>
+				<li>Disminuir la irritabilidad y las reacciones de ira.</li>
+				<li>Aumentar la eficacia interpersonal.</li>
+			</ul>
+		</div>
 	</div>
 	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Industry Leader</h2>
-		<p>Neque viverra justo nec ultrices dui. Est ultricies integer quis auctor elit.</p>
-	</div>
-	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Strategy-Minded</h2>
-		<p>Urna porttitor rhoncus dolor purus non enim praesent ornare.</p>
+		<div class="services-image">
+			<Image
+				src="/assets/psico1.webp"
+				alt="descriptive text"
+				width="200"
+				height="150"
+				class="psico-img-2"
+			/>
+		</div>
+		<h2>Tecnicas, soluciones y modalidades</h2>
+		<div class="pink-card">
+			<ul>
+				<li>Terapia individual</li>
+				<li>Terapia de pareja</li>
+				<li>Terapia familiar</li>
+				<li>
+					Grupos de Educación para Padres y Terapia Conjunta de Padres e Hijos
+				</li>
+				<li>EMDR</li>
+				<li>Terapia de transición vital</li>
+				<li>Terapia cognitivo-conductual centrada en el trauma (TF-CBT)</li>
+				<li>Método Gottman de terapia relacional</li>
+				<li>Terapia relacional Imago (IRT)</li>
+				<li>Terapia de Aceptación y Compromiso (ACT)</li>
+				<li>
+					Terapia basada en la experiencia somática y la atención plena
+					(Mindfulness)
+				</li>
+				<li>Terapia cognitivo-conductual (TCC)</li>
+				<li>Sistemas psicodinámicos y familiares</li>
+			</ul>
+		</div>
 	</div>
 </section>
 
@@ -43,6 +95,37 @@ import Icon from './Icon.astro';
 		color: var(--gray-400);
 	}
 
+	.services-image {
+		height: 320px;
+		text-align: center;
+	}
+
+	.psico-img-1 {
+		width: 300px;
+		height: 307px;
+	}
+
+	.stack h2 {
+		text-align: center;
+	}
+
+	.stack .help-heading{
+		padding-bottom: 36px;
+	}
+
+	.stack .green-card {
+		background-color: var(--accent-green);
+		color: white;
+		border-radius: 0.5rem;
+		height: 500px;
+	}
+	.stack .pink-card {
+		background-color: var(--accent-regular);
+		color: white;
+		border-radius: 0.5rem;
+		height: 500px;
+	}
+
 	@media (min-width: 50em) {
 		.box {
 			border-radius: 1.5rem;
@@ -51,7 +134,7 @@ import Icon from './Icon.astro';
 
 		.skills {
 			display: grid;
-			grid-template-columns: repeat(3, 1fr);
+			grid-template-columns: repeat(2, 1fr);
 			gap: 5rem;
 		}
 
