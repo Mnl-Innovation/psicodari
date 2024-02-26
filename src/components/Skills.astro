@@ -1,5 +1,4 @@
 ---
-import Icon from "./Icon.astro";
 import { Image } from "astro:assets";
 ---
 
@@ -7,7 +6,7 @@ import { Image } from "astro:assets";
 	<div class="stack gap-2 lg:gap-4">
 		<div class="services-image">
 			<Image
-				src="/assets/psico2.webp"
+				src="/assets/mental-health.jpeg"
 				alt="descriptive text"
 				width="200"
 				height="150"
@@ -39,7 +38,7 @@ import { Image } from "astro:assets";
 	<div class="stack gap-2 lg:gap-4">
 		<div class="services-image">
 			<Image
-				src="/assets/psico1.webp"
+				src="/assets/psico2.png"
 				alt="descriptive text"
 				width="200"
 				height="150"
@@ -100,7 +99,7 @@ import { Image } from "astro:assets";
 		text-align: center;
 	}
 
-	.psico-img-1 {
+	.psico-img-1, .psico-img-2 {
 		width: 300px;
 		height: 307px;
 	}
@@ -124,6 +123,18 @@ import { Image } from "astro:assets";
 		color: white;
 		border-radius: 0.5rem;
 		height: 500px;
+		;
+	}
+
+	ul{
+		margin: 20px;
+		list-style:disc;
+		padding-left: 10px;
+	}
+
+	ul > li {
+		line-height: 22px;
+		margin-bottom: 5px;
 	}
 
 	@media (min-width: 50em) {
