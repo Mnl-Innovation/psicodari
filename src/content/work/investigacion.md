@@ -2,9 +2,9 @@
 title: "Investigación y desarrollo: Apego"
 publishDate: 2020-03-02 00:00:00
 img: /assets/investigacion.jpg
-img_alt: Iridescent ripples of a bright blue and pink liquid
+img_alt: Darianela Piñeiro
 description: |
-  We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
+  Si no tienes libertad interior, Que otra libertad esperar poder tener? ---Arturo Graf
 tags:
   - Investigar el apego
   - Ampliar la bibliografía sobre despliegue y reintegración
