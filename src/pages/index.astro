@@ -38,9 +38,11 @@ const projects = (await getCollection("work"))
 					align="start"
 				>
 					<div class="roles">
-						<Pill>
-							<Icon icon="pencil-line" size="1.33em" /> info@psicodari.com
-						</Pill>
+						<a href="mailto:info@psicodari.com">
+							<Pill>
+								<Icon icon="pencil-line" size="1.33em" /> info@psicodari.com
+							</Pill>
+						</a>
 					</div>
 				</Hero>
 
@@ -113,7 +115,12 @@ const projects = (await getCollection("work"))
 		}
 
 		.roles {
-			display: none;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.roles a {
+			text-decoration: none;
 		}
 
 		.hero img {
@@ -230,8 +237,8 @@ const projects = (await getCollection("work"))
 			}
 
 			.cta {
-			grid-area: cta;
-		}
+				grid-area: cta;
+			}
 		}
 
 		/* ====================================================== */
