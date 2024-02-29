@@ -15,12 +15,14 @@ import Hero from "../components/Hero.astro";
 				title="Acerca de mi"
 				tagline=" Gracias por detenerte, Lee abajo para aprender mas de mi."
 			>
-				<img
-					width="1553"
-					height="873"
-					src="/assets/Dari.jpeg"
-					alt="Psicologa Darianela Piñeiro"
-				/>
+				<div class="profile">
+					<img
+						width="500"
+						height="400"
+						src="/assets/Dari.jpeg"
+						alt="Psicologa Darianela Piñeiro"
+					/>
+				</div>
 			</Hero>
 
 			<section>
@@ -38,13 +40,21 @@ import Hero from "../components/Hero.astro";
 				<h2 class="section-title">Educación</h2>
 				<div class="content">
 					<p>Psicología. Año 2012. Universidad Rafael Urdaneta. Maracaibo VE</p>
-					<p>Magister en gerencia de recursos humanos. Año 2018. Universidad Dr Rafael Belloso Chacin Maracaibo VE</p>
+					<p>
+						Magister en gerencia de recursos humanos. Año 2018. Universidad Dr
+						Rafael Belloso Chacin Maracaibo VE
+					</p>
 				</div>
 			</section>
 			<section>
 				<h2 class="section-title">Habilidades</h2>
 				<div class="content">
-					<p>Comunicación asertiva, Notion, Resiliencia, Capacidad de negociación, Creatividad,  Espíritu colaborativo, Iniciativa,  Capacidad de aprendizaje, Capacidad de adaptación, Manejo de Ansiedad</p>
+					<p>
+						Comunicación asertiva, Notion, Resiliencia, Capacidad de
+						negociación, Creatividad, Espíritu colaborativo, Iniciativa,
+						Capacidad de aprendizaje, Capacidad de adaptación, Manejo de
+						Ansiedad
+					</p>
 				</div>
 			</section>
 		</main>
@@ -92,6 +102,10 @@ import Hero from "../components/Hero.astro";
 	.content :global(a:hover),
 	.content :global(a:focus) {
 		text-decoration-color: currentColor;
+	}
+
+	.about img {
+		text-align: center;
 	}
 
 	@media (min-width: 50em) {
