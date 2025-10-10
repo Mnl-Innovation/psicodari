@@ -1,23 +1,22 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ContactCTA from "../components/ContactCTA.astro";
+import PortfolioPreview from "../components/PortfolioPreview.astro";
+import Hero from "../components/Hero.astro";
+import Grid from "../components/Grid.astro";
 
-import BaseLayout from '../layouts/BaseLayout.astro';
-
-import ContactCTA from '../components/ContactCTA.astro';
-import PortfolioPreview from '../components/PortfolioPreview.astro';
-import Hero from '../components/Hero.astro';
-import Grid from '../components/Grid.astro';
-
-const projects = (await getCollection('work')).sort(
+const projects = (await getCollection("work")).sort(
 	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
 );
 ---
 
 <BaseLayout
-	title="Servicios | Darianela Piñeiro"
-	description="Learn about Jeanine White's most recent projects"
+	title="Servicios | Darianela Piñeiro - Psicologa Clínica Online y Presencial en Bogotá."
+	description="Categorias de los distintos servicios que ofrezco. Terapia Online y Presencial en Bogotá. Especialidades: Terapia Cognitivo Conductual, Terapia para Ansiedad, Depresión, Autoestima, Manejo de Estrés, Terapia para Parejas, Terapia Familiar."
+	keywords="Psicologa en Bogotá, Psicologa Online, Terapia Online, Terapia Presencial, Psicoterapia, Psicodari, Psicodari.com, Psicologa Darianela Piñeiro , Terapia para Ansiedad, Terapia para Depresión, Terapia para Autoestima, Manejo de Estrés, Terapia para Parejas, Terapia Familiar."	
 >
-	<div class="stack gap-20">
+	<div class="stack gap-20 ">
 		<main class="wrapper stack gap-8">
 			<Hero
 				title="Servicios"
