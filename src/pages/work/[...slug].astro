@@ -1,8 +1,6 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
-
 import BaseLayout from "../../layouts/BaseLayout.astro";
-
 import ContactCTA from "../../components/ContactCTA.astro";
 import Hero from "../../components/Hero.astro";
 import Icon from "../../components/Icon.astro";
@@ -32,25 +30,38 @@ const { Content } = await entry.render();
 		<div class="stack gap-15">
 			<header>
 				<div class="wrapper stack gap-2">
-					<a class="back-link" href="/work/"><Icon icon="arrow-left" /> Servicios</a>
+					<a class="back-link" href="/work/"
+						><Icon icon="arrow-left" /> Servicios</a
+					>
 					<Hero title={entry.data.title} align="start">
-						<div class="details">
-							<div class="tags">
+						<div class="details space-y-4">
+							<div class="tags flex flex-wrap ">
 								{entry.data.tags.map((t) => <Pill>{t}</Pill>)}
 							</div>
-							<p class="description">{entry.data.description}</p>
+							<p class="description text-sm sm:text-base leading-relaxed text-[#c83486] ">
+								{entry.data.description}
+							</p>
 						</div>
 					</Hero>
+					
 				</div>
 			</header>
-			<main class="wrapper">
-				<div class="stack gap-10 content">
+			<main class="wrapper mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="stack flex flex-col gap-10 content">
 					{
 						entry.data.img && (
-							<img src={entry.data.img} alt={entry.data.img_alt || ""} />
+							<img
+								src={entry.data.img}
+								alt={entry.data.img_alt || ""}
+								class="w-full h-auto rounded-2xl shadow-md object-cover"
+								loading="lazy"
+							/>
 						)
 					}
-					<div class="content">
+					<div class="content prose prose-base sm:prose-lg lg:prose-xl 
+             max-w-none w-full prose-img:w-full prose-img:h-auto 
+             prose-headings:font-semibold prose-img:rounded-xl
+             prose-a:text-blue-600 hover:prose-a:text-blue-800">
 						<Content />
 					</div>
 				</div>
@@ -90,7 +101,7 @@ const { Content } = await entry.render();
 	}
 
 	.content {
-		max-width: 65ch;
+		/* max-width: 65ch; */
 		margin-inline: auto;
 	}
 
@@ -153,7 +164,7 @@ const { Content } = await entry.render();
 		}
 	}
 
-	@media (max-width: 50em) {
+	/* @media (max-width: 50em) {
 		.tags {
 			display: flex;
 			flex-direction: column;
@@ -163,5 +174,5 @@ const { Content } = await entry.render();
 		.back-link[data-astro-cid-qwekciqp] {
     display: block;
     align-self: flex-start;
-	}
+	} */
 </style>
