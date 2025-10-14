@@ -6,7 +6,7 @@ import Hero from "../components/Hero.astro";
 
 <BaseLayout
 	title="Acerca de mi | Darianela Piñeiro - Psicóloga Clínica y Organizacional"
-	description="Acerca de Darianela Piñeiro - Psicóloga Clínica y Organizacional de Maracaibo, Venezuela reside en Bogotá, Colombia. Conoce su experiencia, educación y habilidades." 
+	description="Acerca de Darianela Piñeiro - Psicóloga Clínica y Organizacional de Maracaibo, Venezuela que reside en Bogotá, Colombia. Conoce su experiencia, educación y habilidades."
 	keywords="Darianela Piñeiro, Psicóloga, Psicóloga Clínica, Psicóloga Organizacional, Acerca de, Sobre mi, Educación, Habilidades, Experiencia, Maracaibo, Venezuela, Bogotá, Colombia"
 >
 	<div class="stack gap-20">
@@ -15,46 +15,51 @@ import Hero from "../components/Hero.astro";
 				title="Acerca de mi"
 				tagline=" Gracias por detenerte, Lee abajo para aprender mas de mi."
 			>
-				<div class="profile">
+				<div class="profile flex justify-center items-center">
 					<img
 						width="500"
 						height="400"
 						src="/assets/Dari.webp"
 						alt="Psicologa Darianela Piñeiro"
 					/>
+				
 				</div>
+						<p>
+						Psicóloga Clínica y Organizacional, graduada en 2012 en la
+						Universidad Rafael Urdaneta, en la ciudad de Maracaibo. En 2018
+						obtuve un postgrado en Gerencia de Recursos Humanos en la
+						Universidad Rafael Belloso Chacín. Desde entonces, he orientado mi
+						trayectoria profesional al acompañamiento psicológico individual y
+						grupal, así como al diseño de estrategias para fortalecer el
+						bienestar en los entornos laborales.
+					</p>
+					<br />
+					<p>
+						Mi experiencia integra el ámbito clínico, donde brindo herramientas
+						para la gestión de la ansiedad, el estrés, la toma de decisiones y
+						el desarrollo personal, con el ámbito organizacional, donde apoyo a
+						empresas y equipos en la construcción de climas laborales
+						saludables, comunicación efectiva y liderazgo positivo.
+					</p>
+					<br />
+					<p>
+						Actualmente resido en Bogotá y trabajo de manera virtual, lo que me
+						permite acompañar a personas y organizaciones dentro y fuera de
+						Colombia, ofreciendo un espacio de escucha, orientación y
+						crecimiento personal y profesional.
+					</p>
+					<br />
+					<p>
+						Mi compromiso es crear un entorno de confianza y respeto, orientado
+						al desarrollo integral de las personas y a la construcción de
+						espacios de trabajo más humanos y productivos.
+					</p>
 			</Hero>
 
-			<section>
-				<h2 class="section-title">Sobre mi</h2>
+			<section class="section">
 				<div class="content">
-					<p>
-						Soy proactiva, dinámica, responsable, me encanta sonreír, la música
-						y las buenas charlas. Con experiencia en el área clínica y
-						organizacional, competencias laborales, inteligencia emocional y
-						procesos de selección.
-					</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Educación</h2>
-				<div class="content">
-					<p>Psicología. Año 2012. Universidad Rafael Urdaneta. Maracaibo VE</p>
-					<p>
-						Magister en gerencia de recursos humanos. Año 2018. Universidad Dr
-						Rafael Belloso Chacin Maracaibo VE
-					</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Habilidades</h2>
-				<div class="content">
-					<p>
-						Comunicación asertiva, Notion, Resiliencia, Capacidad de
-						negociación, Creatividad, Espíritu colaborativo, Iniciativa,
-						Capacidad de aprendizaje, Capacidad de adaptación, Manejo de
-						Ansiedad
-					</p>
+					
+					
 				</div>
 			</section>
 		</main>
@@ -110,7 +115,6 @@ import Hero from "../components/Hero.astro";
 
 	@media (min-width: 50em) {
 		.about {
-			display: grid;
 			grid-template-columns: 1fr 60% 1fr;
 		}
 
