@@ -2,7 +2,7 @@
 title: "Investigación y desarrollo: Apego"
 publishDate: 2020-03-02 00:00:00
 updatedDate: 2025-10-10
-img: /assets/investigacion.jpg
+img: /assets/investigacion.webp
 img_alt: "Se refiere al vínculo emocional que se forma entre los bebés y sus cuidadores principales, y cómo este vínculo afecta al desarrollo emocional y social a lo largo de la vida."
 description:
   Se refiere al vínculo emocional que se forma entre los bebés y sus cuidadores principales, y cómo este vínculo afecta al desarrollo emocional y social a lo largo de la vida.
