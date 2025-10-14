@@ -2,7 +2,7 @@
 title: "Terapia de Pareja"
 publishDate: 2023-03-04 00:00:00
 updatedDate: 2025-10-10
-img: /assets/terapia-pareja.jpg
+img: /assets/terapia-pareja.webp
 img_alt: "Enfoque terapéutico que se centra en la relación."
 description:
   La terapia de pareja desde la psicología clínica es un enfoque terapéutico que se centra en la relación y la dinámica entre dos personas.
