@@ -6,7 +6,7 @@ img: /assets/servicios-terapia.webp
 img_alt: "Tratamientos destinados a abordar problemas de salud mental y emocional"
 description:
   Los servicios de terapia desde la psicología clínica abarcan una amplia gama de enfoques y tratamientos destinados a abordar problemas de salud mental y emocional.\
-canonical: "https://psicodari.com/work/servicios-terapia"
+canonical: "https://psicodari.com/servicios/servicios-terapia"
 tags:
   - Depresión
   - Ansiedad
