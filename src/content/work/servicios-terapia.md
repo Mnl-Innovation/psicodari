@@ -2,7 +2,7 @@
 title: "Servicios de Terapia"
 publishDate: 2023-12-01 00:00:00
 updatedDate: 2025-10-10
-img: /assets/servicios-terapia.jpg
+img: /assets/servicios-terapia.webp
 img_alt: "Tratamientos destinados a abordar problemas de salud mental y emocional"
 description:
   Los servicios de terapia desde la psicología clínica abarcan una amplia gama de enfoques y tratamientos destinados a abordar problemas de salud mental y emocional.\

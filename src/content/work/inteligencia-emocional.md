@@ -2,7 +2,7 @@
 title: "Inteligencia Emocional"
 publishDate: 2023-01-02 00:00:00
 updatedDate: 2025-10-10
-img: /assets/inteligencia-emocional.jpg
+img: /assets/inteligencia-emocional.webp
 img_alt: "Persona reflexionando sobre sus emociones, simbolizando la inteligencia emocional en psicología."
 description:
   "Descubre qué es la inteligencia emocional en la psicología clínica, cómo influye en la salud mental, el diagnóstico y las terapias psicológicas, y por qué es esencial para el bienestar emocional."
