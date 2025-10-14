@@ -6,7 +6,7 @@ img: /assets/inteligencia-emocional.webp
 img_alt: "Persona reflexionando sobre sus emociones, simbolizando la inteligencia emocional en psicología."
 description:
   "Descubre qué es la inteligencia emocional en la psicología clínica, cómo influye en la salud mental, el diagnóstico y las terapias psicológicas, y por qué es esencial para el bienestar emocional."
-canonical: "https://psicodari.com/work/inteligencia-emocional"
+canonical: "https://psicodari.com/servicios/inteligencia-emocional"
 tags:
   - Colaborar y planificar
   - Desarrollar técnicas de comunicación

@@ -6,7 +6,7 @@ img: /assets/investigacion.webp
 img_alt: "Se refiere al vínculo emocional que se forma entre los bebés y sus cuidadores principales, y cómo este vínculo afecta al desarrollo emocional y social a lo largo de la vida."
 description:
   Se refiere al vínculo emocional que se forma entre los bebés y sus cuidadores principales, y cómo este vínculo afecta al desarrollo emocional y social a lo largo de la vida.
-canonical: "https://psicodari.com/work/investigacion"
+canonical: "https://psicodari.com/servicios/investigacion"
 tags:
   - Investigar el apego
   - Psicología clínica

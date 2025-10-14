@@ -6,7 +6,7 @@ img: /assets/terapia-pareja.webp
 img_alt: "Enfoque terapéutico que se centra en la relación."
 description:
   La terapia de pareja desde la psicología clínica es un enfoque terapéutico que se centra en la relación y la dinámica entre dos personas.
-canonical: "https://psicodari.com/work/nested/terapia-pareja"
+canonical: "https://psicodari.com/servicios/terapia-pareja"
 tags:
   - Reconexión
   - Comunicación
