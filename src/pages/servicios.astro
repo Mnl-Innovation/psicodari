@@ -14,9 +14,9 @@ const projects = (await getCollection("servicios")).sort(
 <BaseLayout
 	title="Servicios | Darianela Piñeiro - Psicologa Clínica Online y Presencial en Bogotá."
 	description="Categorias de los distintos servicios que ofrezco. Terapia Online y Presencial en Bogotá. Especialidades: Terapia Cognitivo Conductual, Terapia para Ansiedad, Depresión, Autoestima, Manejo de Estrés, Terapia para Parejas, Terapia Familiar."
-	keywords="Psicologa en Bogotá, Psicologa Online, Terapia Online, Terapia Presencial, Psicoterapia, Psicodari, Psicodari.com, Psicologa Darianela Piñeiro , Terapia para Ansiedad, Terapia para Depresión, Terapia para Autoestima, Manejo de Estrés, Terapia para Parejas, Terapia Familiar."	
+	keywords="Psicologa en Bogotá, Psicologa Online, Terapia Online, Terapia Presencial, Psicoterapia, Psicodari, Psicodari.com, Psicologa Darianela Piñeiro , Terapia para Ansiedad, Terapia para Depresión, Terapia para Autoestima, Manejo de Estrés, Terapia para Parejas, Terapia Familiar."
 >
-	<div class="stack gap-20 ">
+	<div class="stack gap-20">
 		<main class="wrapper stack gap-8">
 			<Hero
 				title="Servicios"
@@ -26,12 +26,37 @@ const projects = (await getCollection("servicios")).sort(
 			<Grid variant="offset">
 				{
 					projects.map((project) => (
-						<li>
-							<PortfolioPreview project={project} />
+						<li class="servicio-card">
+							<div class="img-wrap">
+								<PortfolioPreview project={project} />
+							</div>
 						</li>
 					))
 				}
 			</Grid>
+
+			<style>
+				.servicio-card .img-wrap {
+					aspect-ratio: 16 / 9;
+					overflow: hidden;
+					border-radius: 0.5rem;
+					display: block;
+					position: relative;
+				}
+
+				.servicio-card .img-wrap img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover; /* Recorta la imagen para llenar el contenedor */
+					object-position: center; /* Centra la imagen */
+					display: block;
+					transition: transform 0.4s ease; /* Efecto sutil al pasar el mouse */
+				}
+
+				.servicio-card .img-wrap:hover img {
+					transform: scale(1.05); /* Pequezo zoom al hover, opcional */
+				}
+			</style>
 		</main>
 		<ContactCTA />
 	</div>

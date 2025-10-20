@@ -66,4 +66,7 @@ El cambio positivo requiere **esfuerzo, empatía y disposición para aprender nu
 La **terapia de pareja** busca **restaurar la armonía, fortalecer el vínculo emocional y promover el bienestar de ambos miembros**.  
 A través del acompañamiento profesional, las parejas pueden **reencontrarse, sanar heridas y construir una relación más consciente y saludable**.
 
+<br>
+<br>
+
 > 💡 *“El amor no consiste en mirarse el uno al otro, sino en mirar juntos en la misma dirección.”* — Antoine de Saint-Exupéry

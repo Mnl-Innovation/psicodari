@@ -71,4 +71,7 @@ Su propósito es **brindar alivio emocional, orientación y acompañamiento** en
 La psicología clínica ofrece múltiples caminos terapéuticos para **mejorar la calidad de vida y el bienestar emocional**.  
 El tipo de terapia adecuado dependerá de las necesidades, el contexto y los objetivos personales de cada individuo.
 
+<br>
+<br>
+
 > 💡 *“Buscar ayuda psicológica no es signo de debilidad, sino un acto de autoconocimiento y fortaleza.”*
