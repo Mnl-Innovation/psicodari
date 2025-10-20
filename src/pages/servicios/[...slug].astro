@@ -35,15 +35,16 @@ const { Content } = await entry.render();
 					>
 					<Hero title={entry.data.title} align="start">
 						<div class="details space-y-4">
-							<div class="tags flex flex-wrap ">
+							<div class="tags flex flex-wrap">
 								{entry.data.tags.map((t) => <Pill>{t}</Pill>)}
 							</div>
-							<p class="description text-sm sm:text-base leading-relaxed text-[#c83486] ">
+							<p
+								class="description text-sm sm:text-base leading-relaxed text-[#c83486]"
+							>
 								{entry.data.description}
 							</p>
 						</div>
 					</Hero>
-					
 				</div>
 			</header>
 			<main class="wrapper mx-auto px-4 sm:px-6 lg:px-8">
@@ -53,15 +54,17 @@ const { Content } = await entry.render();
 							<img
 								src={entry.data.img}
 								alt={entry.data.img_alt || ""}
-								class="w-full h-auto rounded-2xl shadow-md object-cover"
+								class="max-w-md w-full h-auto mx-auto rounded-2xl shadow-lg object-cover"
 								loading="lazy"
 							/>
 						)
 					}
-					<div class="content prose prose-base sm:prose-lg lg:prose-xl 
-             max-w-none w-full prose-img:w-full prose-img:h-auto 
+					<div
+						class="content prose prose-base sm:prose-lg lg:prose-xl
+             max-w-none w-full prose-img:w-full prose-img:h-auto
              prose-headings:font-semibold prose-img:rounded-xl
-             prose-a:text-blue-600 hover:prose-a:text-blue-800">
+             prose-a:text-blue-600 hover:prose-a:text-blue-800"
+					>
 						<Content />
 					</div>
 				</div>

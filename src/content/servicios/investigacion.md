@@ -71,6 +71,9 @@ Comprender nuestros patrones de apego puede ayudarnos a **mejorar nuestras relac
 
 ---
 
+<br>
+<br>
+
 > 💡 *“Lo que ocurre en los primeros vínculos emocionales, deja huellas en la forma en que amamos y nos relacionamos en el futuro.”*  
 > — John Bowlby
 
