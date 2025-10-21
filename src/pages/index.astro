@@ -19,7 +19,7 @@ import Skills from "../components/Skills.astro";
 
 // Content Fetching: List four most recent servicios projects
 const projects = (await getCollection("servicios"))
-	.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
+	.sort((a, b) => (b.data.publishDate?.valueOf() ?? 0) - (a.data.publishDate?.valueOf() ?? 0))
 	.slice(0, 6);
 
 ---
@@ -30,7 +30,7 @@ const projects = (await getCollection("servicios"))
 			<header class="hero">
 				<Hero
 					title="La atención y el apoyo que necesitas para alcanzar tus objetivos."
-					tagline=`"Sólo cuando seamos lo bastante valientes para explorar la oscuridad descubriremos el poder infinito de nuestra luz."`
+					tagline=`"Sólo cuando seamos lo bastante valientes para explorar la oscuridad, descubriremos el poder infinito de nuestra luz."`
 					`
 					author="---Brene Brown"
 					align="start"
