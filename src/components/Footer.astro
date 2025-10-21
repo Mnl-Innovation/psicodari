@@ -1,19 +1,45 @@
 ---
-import Icon from './Icon.astro';
+import { getCollection } from "astro:content";
+import Icon from "./Icon.astro";
 const currentYear = new Date().getFullYear();
+
+const projects = (await getCollection("servicios")).sort(
+	(a, b) =>
+		(b.data.publishDate?.valueOf() ?? 0) - (a.data.publishDate?.valueOf() ?? 0)
+);
 ---
 
 <footer>
-	<div class="group">
+	<div>
+		<p><strong>Servicios</strong></p>
+		<ul>
+			{
+				projects.map((project) => (
+					<li>
+						<a href={`/servicios/${project.slug}`}>{project.data.title}</a>
+					</li>
+				))
+			}
+		</ul>
+	</div>
+	<div>
+		<p>Hecho con ❤️ por Darianela Piñeiro</p>
 		<p>
-			<Icon icon="terminal-window" size="1.2em" />
+			<a href="mailto:info@psicodari.com">info@psicodari.com</a>
 		</p>
-		<p> {currentYear} Radev</p>
+	</div>
+	<div class="group">
+		<p>{currentYear} Radev</p>
 	</div>
 	<p class="socials">
 		<a href="https://twitter.com/PsicoDari" target="_blank"> Twitter</a>
 		<a href="https://www.instagram.com/psicodari" target="_blank"> Instagram</a>
-		<a href="https://www.linkedin.com/in/darianela-pi%C3%B1eiro-morillo-47525549" target="_blank"> Linkedin</a>
+		<a
+			href="https://www.linkedin.com/in/darianela-pi%C3%B1eiro-morillo-47525549"
+			target="_blank"
+		>
+			Linkedin</a
+		>
 	</p>
 </footer>
 <style>
