@@ -1,5 +1,7 @@
 ---
 import { getCollection } from "astro:content";
+import { Twitter, Instagram, Linkedin } from "lucide-astro";
+
 const currentYear = new Date().getFullYear();
 
 const projects = (await getCollection("servicios")).sort(
@@ -8,91 +10,76 @@ const projects = (await getCollection("servicios")).sort(
 );
 ---
 
-<footer>
-	<div>
-		<p><strong>Servicios</strong></p>
-		<ul>
-			{
-				projects.map((project) => (
+<footer class="bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 mt-auto">
+	<div
+		class="max-w-7xl mx-auto px-6 py-12 grid gap-10 md:grid-cols-3 text-center md:text-left"
+	>
+		<!-- 🧭 Servicios -->
+		<div>
+			<h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">
+				Servicios
+			</h3>
+			<ul class="space-y-2">
+				{projects.map((project) => (
 					<li>
-						<a href={`/servicios/${project.slug}`}>{project.data.title}</a>
+						<a
+							href={`/servicios/${project.slug}`}
+							class="text-gray-600 dark:text-gray-300 hover:text-[#D53983] transition-colors"
+						>
+							{project.data.title}
+						</a>
 					</li>
-				))
-			}
-		</ul>
+				))}
+			</ul>
+		</div>
+
+		<!-- 💌 Contacto -->
+		<div class="flex flex-col items-center md:items-start">
+			<p class="text-gray-700 dark:text-gray-300 mb-2">
+				Hecho con <span class="text-[#D53983]">❤️</span> por Darianela Piñeiro
+			</p>
+			<a
+				href="mailto:info@psicodari.com"
+				class="text-[#009C87] hover:underline"
+			>
+				info@psicodari.com
+			</a>
+		</div>
+
+		<!-- 🌐 Redes Sociales -->
+		<div class="flex flex-col items-center md:items-end gap-3">
+			<p class="text-gray-700 dark:text-gray-400">© {currentYear} Radev</p>
+			<div class="flex gap-5">
+				<a
+					href="https://twitter.com/PsicoDari"
+					target="_blank"
+					class="flex items-center gap-2 text-gray-500 hover:text-[#1DA1F2] transition-colors"
+					aria-label="Twitter"
+				>
+					<Twitter size={20} />
+					<span class="hidden sm:inline">Twitter</span>
+				</a>
+
+				<a
+					href="https://www.instagram.com/psicodari"
+					target="_blank"
+					class="flex items-center gap-2 text-gray-500 hover:text-[#E1306C] transition-colors"
+					aria-label="Instagram"
+				>
+					<Instagram size={20} />
+					<span class="hidden sm:inline">Instagram</span>
+				</a>
+
+				<a
+					href="https://www.linkedin.com/in/darianela-piñeiro-morillo-47525549"
+					target="_blank"
+					class="flex items-center gap-2 text-gray-500 hover:text-[#0077B5] transition-colors"
+					aria-label="LinkedIn"
+				>
+					<Linkedin size={20} />
+					<span class="hidden sm:inline">LinkedIn</span>
+				</a>
+			</div>
+		</div>
 	</div>
-	<div>
-		<p>Hecho con ❤️ por Darianela Piñeiro</p>
-		<p>
-			<a href="mailto:info@psicodari.com">info@psicodari.com</a>
-		</p>
-	</div>
-	<div class="group">
-		<p>{currentYear} Radev</p>
-	</div>
-	<p class="socials">
-		<a href="https://twitter.com/PsicoDari" target="_blank"> Twitter</a>
-		<a href="https://www.instagram.com/psicodari" target="_blank"> Instagram</a>
-		<a
-			href="https://www.linkedin.com/in/darianela-pi%C3%B1eiro-morillo-47525549"
-			target="_blank"
-		>
-			Linkedin</a
-		>
-	</p>
 </footer>
-<style>
-	footer {
-		display: flex;
-		flex-direction: column;
-		gap: 3rem;
-		margin-top: auto;
-		padding: 3rem 2rem 3rem;
-		text-align: center;
-		color: var(--gray-400);
-		font-size: var(--text-sm);
-	}
-
-	footer a {
-		color: var(--gray-400);
-		text-decoration: 1px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
-	}
-
-	footer a:hover,
-	footer a:focus {
-		text-decoration-color: currentColor;
-	}
-
-	.group {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-	}
-
-	.socials {
-		display: flex;
-		justify-content: center;
-		gap: 1rem;
-		flex-wrap: wrap;
-	}
-
-	@media (min-width: 50em) {
-		footer {
-			flex-direction: row;
-			justify-content: space-between;
-			padding: 2.5rem 5rem;
-		}
-
-		.group {
-			flex-direction: row;
-			gap: 1rem;
-			flex-wrap: wrap;
-		}
-
-		.socials {
-			justify-content: flex-end;
-		}
-	}
-</style>
