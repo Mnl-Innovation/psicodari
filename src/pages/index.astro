@@ -11,6 +11,7 @@ import Hero from "../components/Hero.astro";
 import Icon from "../components/Icon.astro";
 import Pill from "../components/Pill.astro";
 import PortfolioPreview from "../components/PortfolioPreview.astro";
+import CTAPdf from "../components/CTAPdf.astro";
 import { Image } from "astro:assets";
 
 // Page section components
@@ -52,6 +53,7 @@ const projects = (await getCollection("servicios"))
 				/>
 			</header>
 
+			<CTAPdf />
 			<Skills />
 		</div>
 
