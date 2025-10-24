@@ -1,0 +1,27 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import HeroLanding from "@/components/Hero-Landing.astro";
+import ContenidoGuia from "@/components/Contenido-Guia.astro";
+import SobreCTA from "@/components/SobreCTA.astro";
+import CTAPdf from "@/components/CTAPdf.astro";
+import "../styles/global.css";
+
+// src/pages/guia-ansiedad.astro
+const title = "Guía de Apoyo para la Ansiedad | Psicodari";
+const description =
+	"Descarga gratis tu guía de acompañamiento emocional. Herramientas prácticas para manejar la ansiedad con respiración, ejercicios y autoconocimiento.";
+const keywords =
+	"Guía de Ansiedad, Psicodari, Psicóloga Darianela Piñeiro, Manejo de Ansiedad, Herramientas para la Ansiedad, Guía Gratuita, Apoyo Emocional, Bienestar Psicológico";
+---
+
+<BaseLayout {title} {description} {keywords}>
+
+		<HeroLanding />
+
+		<ContenidoGuia />
+
+		<SobreCTA />
+
+		<CTAPdf />
+	
+</BaseLayout>

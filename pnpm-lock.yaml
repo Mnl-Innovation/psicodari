@@ -29,6 +29,9 @@ importers:
       esbuild:
         specifier: ^0.25.11
         version: 0.25.11
+      lucide-astro:
+        specifier: ^0.546.0
+        version: 0.546.0(astro@5.14.7(@types/node@24.9.0)(jiti@1.21.7)(rollup@4.52.5)(typescript@5.9.3)(yaml@2.8.1))
       react:
         specifier: ^19.2.0
         version: 19.2.0
@@ -1406,6 +1409,11 @@ packages:
 
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
+
+  lucide-astro@0.546.0:
+    resolution: {integrity: sha512-bsNvG64w/PUe8BFXfFSwV6KzWSFl1vBIpyeWAZLO0s661ZBKhGDnCQCucv359BOBdiLxCskq6rSeHg2OONEb0Q==}
+    peerDependencies:
+      astro: '>=2.7.1'
 
   magic-string@0.30.19:
     resolution: {integrity: sha512-2N21sPY9Ws53PZvsEpVtNuSW+ScYbQdp4b9qUaL+9QkHUrGFKo56Lg9Emg5s9V/qrtNBmiR01sYhUOwu3H+VOw==}
@@ -4020,6 +4028,10 @@ snapshots:
   lru-cache@5.1.1:
     dependencies:
       yallist: 3.1.1
+
+  lucide-astro@0.546.0(astro@5.14.7(@types/node@24.9.0)(jiti@1.21.7)(rollup@4.52.5)(typescript@5.9.3)(yaml@2.8.1)):
+    dependencies:
+      astro: 5.14.7(@types/node@24.9.0)(jiti@1.21.7)(rollup@4.52.5)(typescript@5.9.3)(yaml@2.8.1)
 
   magic-string@0.30.19:
     dependencies:
