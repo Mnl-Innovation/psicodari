@@ -1,5 +1,6 @@
 # 🎨 Psicodari: The Art of Consciousness  
-www.psicodari.com
+
+## www.psicodari.com
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)  
 [![MNL Innovation](https://img.shields.io/badge/Powered%20by-MNL%20Innovation-blue)](https://github.com/Mnl-Innovation)  
