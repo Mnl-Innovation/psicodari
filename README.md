@@ -1,46 +1,123 @@
-# Psicodari
-
-La atención y el apoyo que necesitas para alcanzar tus objetivos.
-
-> “Sólo cuando seamos lo bastante valientes para explorar la oscuridad descubriremos el poder infinito de nuestra luz.” — Brené Brown
-
-## 📌 Acerca del Proyecto
-
-Psicodari es un espacio profesional de apoyo psicológico, terapéutico y educativo, orientado tanto a individuos como a parejas, familias y organizaciones. Se ofrece un enfoque humanizado y flexible, adaptado a las necesidades únicas de cada persona. Según la web oficial.
-
-- Ayuda a “hacer frente a las preocupaciones, el miedo, la tristeza y la confusión”.
-- Facilita “cambiar para gestionar el estrés y la ansiedad cotidianos”.  
-- Asiste en “dar sentido a los sentimientos incómodos y las emociones abrumadoras”.
-- Fomenta vínculos familiares, el cuidado consciente, la autoestima, entre otros.
-
-Además, la práctica incluye modalidades diversas como:
-
-- Terapia individual, de pareja y familiar.
-- Grupos de educación para padres y terapia conjunta de padres e hijos.
-- Coaching organizacional, terapia cognitivo-conductual, e inteligencia emocional.
-
-## 🎯 Objetivos del Proyecto
-
-- Crear un sitio web claro, accesible y acogedor para quienes buscan apoyo psicológico.  
-- Presentar de forma transparente los servicios, la filosofía y el enfoque de Psicodari.  
-- Facilitar el contacto, la agenda de citas y la comunicación entre la profesional y los clientes.  
-- Brindar contenido educativo que empodere a las personas para gestionar sus emociones y relaciones.  
-- Generar confianza, empatía y profesionalismo en cada punto de contacto con el usuario.
-
-## 🛠️ Tecnologías utilizadas
-
-_(Estos son ejemplos; ajusta según lo que realmente uses)_  
-- HTML5 / CSS3 / JavaScript
-- Framework Web (Astro)
-- Framework de frontend (por ejemplo: React, Vue o simplemente Vanilla JS)  
-- Sistema de gestión de contenido (CMS) o backend ligero para citas/contacto (En desarrollo)  
-- Responsivo para móviles y tablets  
-- Buenas prácticas de accesibilidad (A11Y) y SEO  
+# 🎨 Psicodari: The Art of Consciousness  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)  
+[![MNL Innovation](https://img.shields.io/badge/Powered%20by-MNL%20Innovation-blue)](https://github.com/Mnl-Innovation)  
+[![Built with Astro](https://img.shields.io/badge/Built%20with-Astro-ff5d01?logo=astro&logoColor=white)](https://astro.build)  
+[![TailwindCSS](https://img.shields.io/badge/Styled%20with-TailwindCSS-06b6d4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)  
+[![Deploys by Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)](https://vercel.com)  
 
 
+**Psicodari** is a creative-psychological project combining art with self-exploration and consciousness through painting and other creative processes.
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+---
 
-## License
+## 🔍 Overview  
+This repository contains the source code and materials for the **Psicodari** project.  
+The goal: to merge art and psychological awareness, enabling participants to engage with their inner life through creative acts, reflection, and guided processes.
 
-[MIT]
+**Key goals:**
+- 🎨 Empower individuals to express and explore their consciousness through art  
+- 🧠 Provide frameworks and tools for self-knowledge via creative processes  
+- 📚 Offer modules and resources for painting sessions, reflections, and insights  
+- 🚀 Blend technology, art, psychology, and community into a unified experience
+
+---
+
+## 🧰 Technologies & Setup  
+**Core technologies:**
+
+**Core stack:**
+- [Astro](https://astro.build) — Static-site framework for fast, content-focused sites.  
+- [Tailwind CSS](https://tailwindcss.com) — Utility-based styling for rapid development.  
+- [Vite](https://vitejs.dev) — Modern frontend tooling for blazing-fast builds.  
+- [TypeScript](https://www.typescriptlang.org/) — Type-safe development. 
+- Content: Markdown / JSON for prompts, reflections, and art data  
+
+**Installation & usage:**
+```bash
+# Install dependencies
+npm install
+
+# Run development build
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production locally
+npm run preview
+```
+*(Adjust if using `yarn` or `pnpm`.)*
+
+---
+
+## 📂 Project Structure  
+```
+/
+├── public/                 # Static assets (artwork images, icons, etc.)
+├── src/
+│   ├── components/         # UI components for prompts, art gallery, reflections
+│   ├── pages/              # Pages such as home, gallery, and about
+│   ├── styles/             # Global styles and Tailwind imports
+│   ├── modules/            # Self-knowledge modules, creative sessions, guides
+│   └── data/               # Prompts, reflection texts, and metadata
+├── LICENSE                 # License file
+└── README.md               # Project documentation
+```
+
+---
+
+## ✅ Features  
+- 🖌 Guided painting and creative-reflection sessions  
+- 🧠 Self-knowledge modules for artistic introspection  
+- 🖼 Gallery display for art and reflection archives  
+- 🧩 Integration of psychology with artistic creation  
+- 🌍 Ready for web deployment and community interaction  
+
+---
+
+## 🚀 Deployment  
+To deploy the **Psicodari** site:
+
+1. Push your repository to GitHub.  
+2. Deploy using [Vercel](https://vercel.com) or [Netlify](https://www.netlify.com):  
+   ```bash
+   Build Command: npm run build
+   Output Directory: dist
+   ```  
+3. Enable automatic deployments from the `main` branch.  
+4. Share the live site link with collaborators and users.
+
+---
+
+## 🛠 Contributing  
+Contributions are warmly welcome! You can help by improving modules, UX/UI, or expanding creative frameworks.
+
+**How to contribute:**
+1. Fork the repository  
+2. Create a branch (`feature/new-module` or `fix/typo`)  
+3. Commit your changes with clear messages  
+4. Open a Pull Request to `main`  
+
+Please maintain consistent coding and styling conventions (Tailwind + Astro/React).
+
+---
+
+## 🧑‍💻 Maintainers  
+**[MNL Innovation](https://github.com/Mnl-Innovation)**  
+Bringing together technology, art, and consciousness.
+
+---
+
+## 📄 License  
+This project is licensed under the **MIT License**.  
+
+You are free to:
+- ✅ Use the code and materials in personal, educational, or commercial projects  
+- 🔧 Modify, adapt, and distribute under the same terms  
+- 💡 Attribute credit to the original authors and **MNL Innovation** when possible  
+
+See the [LICENSE](./LICENSE) file for the full legal text.
+
+---
+
+Made with passion, creativity, and mindfulness by **MNL Innovation**.
