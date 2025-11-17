@@ -5,16 +5,7 @@ import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 import Analytics from "@vercel/analytics/astro";
-
-//Import Mixpanel SDK
-import mixpanel from "mixpanel-browser";
-
-// Create an instance of the Mixpanel object, your token is already added to this snippet
-mixpanel.init('418085a8214dda54d00f3506cf4927b9', {
-  autocapture: true,
-  record_sessions_percent: 100,
-})
-
+import MixpanelLoader from "@/components/MixpanelLoader.astro";
 
 interface Props {
 	title?: string | undefined;
@@ -29,8 +20,7 @@ const { title, description } = Astro.props;
 	<head>
 		<MainHead title={title} description={description} />
 		<Analytics />
-
-	
+		<MixpanelLoader />
 	</head>
 
 	<body>
@@ -66,7 +56,7 @@ const { title, description } = Astro.props;
 			:root.dark {
 				--bg-image-main: url("/assets/backgrounds/bg-main-dark-800w.jpg");
 				--bg-image-main-curves: url("/assets/backgrounds/bg-main-dark.svg");
-				--bg-svg-blend-mode: darken;  
+				--bg-svg-blend-mode: darken;
 				--bg-blend-mode: lighten;
 			}
 

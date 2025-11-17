@@ -1,0 +1,11 @@
+<script>
+	import mixpanel from "mixpanel-browser";
+
+	mixpanel.init("418085a8214dda54d00f3506cf4927b9", {
+		autocapture: true,
+		record_sessions_percent: 100,
+	});
+
+	// Opcional: pequeño evento para verificar que funciona
+	mixpanel.track("page_loaded");
+</script>
